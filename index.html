@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Taxi El Flaco: servicio de taxi local y viajes regionales en Ixtapan de la Sal, Tonatico y alrededores."
+    >
+    <title>Taxi El Flaco | Taxi en Ixtapan de la Sal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <img class="brand__mark" src="assets/taxi-flaco-logo.svg" alt="">
+        <span>
+          <strong>Taxi El Flaco</strong>
+          <small>Ixtapan y Tonatico</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-nav-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" data-nav>
+        <a href="#servicios">Servicios</a>
+        <a href="#zonas">Zonas</a>
+        <a href="#tarifa">Tarifa</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <a class="header-cta" data-whatsapp-link href="#" target="_blank" rel="noreferrer">
+        WhatsApp
+      </a>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero__media" aria-hidden="true">
+          <img src="assets/taxi-flaco-hero.png" alt="">
+        </div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <p class="eyebrow">Taxi local y viajes regionales</p>
+          <h1>Taxi El Flaco</h1>
+          <p class="hero__lead">
+            Taxi familiar con trato amable para moverte por Ixtapan de la Sal,
+            Tonatico y municipios cercanos. Puntualidad, confianza y rutas bien conocidas.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" data-whatsapp-link href="#" target="_blank" rel="noreferrer">
+              Pedir por WhatsApp
+            </a>
+            <a class="btn btn--secondary" href="tel:+527295421168">Llamar ahora</a>
+          </div>
+          <dl class="hero__stats" aria-label="Datos destacados">
+            <div>
+              <dt>4.9/5</dt>
+              <dd>Calificación estimada</dd>
+            </div>
+            <div>
+              <dt>6:30-19:00</dt>
+              <dd>Horario de servicio</dd>
+            </div>
+            <div>
+              <dt>+3 años</dt>
+              <dd>Experiencia</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="quick-card" aria-label="Contacto rapido">
+        <div>
+          <span class="status-dot"></span>
+          Disponible en horario de servicio
+        </div>
+        <a class="quick-phone" href="tel:+527295421168">Teléfono: 729 542 1168</a>
+        <a data-whatsapp-link href="#" target="_blank" rel="noreferrer">Enviar ubicación</a>
+      </section>
+
+      <section class="section" id="servicios">
+        <div class="section__heading">
+          <p class="eyebrow">Servicios</p>
+          <h2>Traslados pensados para llegar bien y a tiempo</h2>
+          <p>
+            Servicio directo de taxi para viajes locales y salidas regionales.
+            Las tarifas se confirman antes de iniciar el recorrido.
+          </p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <span class="service-card__icon">01</span>
+            <h3>Viajes locales</h3>
+            <p>Traslados dentro de Ixtapan de la Sal para compras, consultas, trabajo o visitas.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-card__icon">02</span>
+            <h3>Tonatico</h3>
+            <p>Viajes frecuentes entre Tonatico e Ixtapan con tarifa base conocida.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-card__icon">03</span>
+            <h3>Viajes regionales</h3>
+            <p>Salidas a Tenancingo, Coatepec Harinas, El Mogote y Pilcaya bajo acuerdo previo.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-card__icon">04</span>
+            <h3>Taxi familiar</h3>
+            <p>Atención amable para familias, personas mayores y pasajeros que buscan confianza.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="trust-band">
+        <div>
+          <p class="eyebrow">Confianza</p>
+          <h2>Informacion clara antes de abordar</h2>
+        </div>
+        <ul class="trust-list">
+          <li>Nissan March 2017</li>
+          <li>Servicio familiar padre e hijo</li>
+          <li>Precio acordado antes del viaje</li>
+          <li>Efectivo y transferencia</li>
+        </ul>
+      </section>
+
+      <section class="section section--split" id="zonas">
+        <div class="section__heading section__heading--left">
+          <p class="eyebrow">Cobertura</p>
+          <h2>Zonas de servicio</h2>
+          <p>
+            Cobertura principal en Ixtapan de la Sal y viajes cercanos.
+            La disponibilidad se confirma por WhatsApp.
+          </p>
+        </div>
+
+        <div class="zone-panel">
+          <button class="zone is-active" type="button" data-zone="ixtapan">Ixtapan</button>
+          <button class="zone" type="button" data-zone="regional">Regional</button>
+          <button class="zone" type="button" data-zone="rutas">Rutas</button>
+          <div class="zone-output" data-zone-output>
+            <h3>Ixtapan de la Sal y alrededores</h3>
+            <p>Viajes locales, hoteles, balnearios, consultas, compras y traslados familiares.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="fare-section" id="tarifa">
+        <div class="fare-copy">
+          <p class="eyebrow">Tarifa orientativa</p>
+          <h2>Cotiza rápido antes de mandar mensaje</h2>
+          <p>
+            Estos precios son estimados editables. El dato real confirmado es
+            Tonatico-Ixtapan desde $60; lo demás queda como referencia temporal.
+          </p>
+          <ul class="fare-list" aria-label="Tarifas estimadas por ruta">
+            <li><span>Tonatico - Ixtapan</span><strong>desde $60</strong></li>
+            <li><span>Ixtapan - El Mogote</span><strong>$80-$100</strong></li>
+            <li><span>Ixtapan - Pilcaya</span><strong>$130-$170</strong></li>
+            <li><span>Ixtapan - Coatepec Harinas</span><strong>$180-$240</strong></li>
+            <li><span>Ixtapan - Tenancingo</span><strong>$220-$280</strong></li>
+          </ul>
+        </div>
+
+        <form class="fare-calculator" data-fare-form>
+          <label>
+            Tipo de servicio
+            <select name="service">
+              <option value="local">Viaje local</option>
+              <option value="tonatico">Tonatico-Ixtapan</option>
+              <option value="regional">Regional cercano</option>
+              <option value="long">Regional largo</option>
+            </select>
+          </label>
+          <label>
+            Distancia estimada
+            <input type="range" name="distance" min="3" max="80" value="12" data-distance>
+            <span><strong data-distance-output>12</strong> km</span>
+          </label>
+          <label>
+            Horario
+            <select name="time">
+              <option value="day">Horario normal</option>
+              <option value="early">Muy temprano</option>
+              <option value="wait">Con espera</option>
+            </select>
+          </label>
+          <div class="fare-result">
+            <span>Estimado desde</span>
+            <strong data-fare-output>$220 MXN</strong>
+          </div>
+          <a class="btn btn--primary btn--full" data-whatsapp-link href="#" target="_blank" rel="noreferrer">
+            Confirmar por WhatsApp
+          </a>
+        </form>
+      </section>
+
+      <section class="section" aria-label="Testimonios">
+        <div class="section__heading">
+          <p class="eyebrow">Clientes</p>
+          <h2>Opiniones de ejemplo</h2>
+        </div>
+        <div class="review-grid">
+          <figure>
+            <blockquote>Siempre llega puntual y avisa cuando ya esta cerca. Muy recomendable.</blockquote>
+            <figcaption>Mariana G. - Ixtapan</figcaption>
+          </figure>
+          <figure>
+            <blockquote>Lo contacto para viajes entre Tonatico e Ixtapan. Precio claro y unidad limpia.</blockquote>
+            <figcaption>Carlos M. - Tonatico</figcaption>
+          </figure>
+          <figure>
+            <blockquote>Me apoyo con traslados para mi mama a sus consultas. Trato muy amable.</blockquote>
+            <figcaption>Rocío P. - Coatepec Harinas</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contacto">
+      <div>
+        <a class="brand brand--footer" href="#inicio">
+          <img class="brand__mark" src="assets/taxi-flaco-logo.svg" alt="">
+          <span>
+            <strong>Taxi El Flaco</strong>
+            <small>Traslados seguros</small>
+          </span>
+        </a>
+        <p>Servicio en Ixtapan de la Sal, Tonatico, Tenancingo, Coatepec Harinas, El Mogote y Pilcaya.</p>
+      </div>
+      <address>
+        <strong>Contacto</strong>
+        <a href="tel:+527295421168">Teléfono: 729 542 1168</a>
+        <a data-whatsapp-link href="#" target="_blank" rel="noreferrer">WhatsApp: 729 542 1168</a>
+        <span>Horario: 6:30 am a 7:00 pm</span>
+        <span>Base: Ixtapan de la Sal, Estado de México</span>
+        <span>Unidad: Nissan March 2017</span>
+        <span>Pago: efectivo y transferencia</span>
+      </address>
+      <a class="floating-whatsapp" data-whatsapp-link href="#" target="_blank" rel="noreferrer" aria-label="Contactar por WhatsApp">
+        WA
+      </a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

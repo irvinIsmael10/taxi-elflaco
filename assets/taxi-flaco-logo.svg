@@ -1,0 +1,16 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Logo Taxi El Flaco</title>
+  <desc id="desc">Monograma TF con detalles de taxi en amarillo, verde y negro.</desc>
+  <rect width="256" height="256" rx="40" fill="#121417"/>
+  <path d="M32 58C32 43.6406 43.6406 32 58 32H198C212.359 32 224 43.6406 224 58V86H32V58Z" fill="#FFD21F"/>
+  <path d="M32 170H224V198C224 212.359 212.359 224 198 224H58C43.6406 224 32 212.359 32 198V170Z" fill="#177A4D"/>
+  <path d="M52 86H204V170H52V86Z" fill="#F8FAF8"/>
+  <path d="M52 86H204V105H52V86Z" fill="#121417"/>
+  <path d="M64 90H77V103H64V90ZM90 90H103V103H90V90ZM116 90H129V103H116V90ZM142 90H155V103H142V90ZM168 90H181V103H168V90ZM77 103H90V116H77V103ZM103 103H116V116H103V103ZM129 103H142V116H129V103ZM155 103H168V116H155V103ZM181 103H194V116H181V103Z" fill="#F8FAF8"/>
+  <path d="M72 132H112V151H95V185H72V132Z" fill="#121417"/>
+  <path d="M123 132H184V151H147V161H178V179H147V185H123V132Z" fill="#121417"/>
+  <path d="M72 128H112V137H72V128ZM123 128H184V137H123V128Z" fill="#FFD21F"/>
+  <path d="M67 67C79.5 54 97.25 48 128 48C158.75 48 176.5 54 189 67" stroke="#121417" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="76" cy="199" r="8" fill="#FFD21F"/>
+  <circle cx="180" cy="199" r="8" fill="#FFD21F"/>
+</svg>

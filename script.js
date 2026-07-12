@@ -43,6 +43,7 @@ const fareForm = document.querySelector("[data-fare-form]");
 const distanceInput = document.querySelector("[data-distance]");
 const distanceOutput = document.querySelector("[data-distance-output]");
 const fareOutput = document.querySelector("[data-fare-output]");
+const floatingActions = document.querySelectorAll(".floating-whatsapp, .floating-quote");
 
 function buildWhatsappUrl(message = driverData.baseMessage) {
   return `https://wa.me/${driverData.phone}?text=${encodeURIComponent(message)}`;
@@ -56,6 +57,9 @@ function setWhatsappLinks(message) {
 
 function updateHeaderState() {
   header.classList.toggle("is-scrolled", window.scrollY > 12);
+  floatingActions.forEach((action) => {
+    action.classList.toggle("is-visible", window.scrollY > 360);
+  });
 }
 
 function closeMobileNav() {

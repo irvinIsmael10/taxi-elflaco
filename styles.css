@@ -1110,6 +1110,13 @@ h3 {
     min-height: 54px;
     padding: 0 16px;
   }
+
+  .fare-in-view .floating-whatsapp,
+  .fare-in-view .floating-quote {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px);
+  }
 }
 
 @media (max-width: 360px) {

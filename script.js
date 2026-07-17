@@ -12,6 +12,8 @@ const nav = document.querySelector("[data-nav]");
 const whatsappLinks = document.querySelectorAll("[data-whatsapp-link]");
 const whatsappQuoteLinks = document.querySelectorAll("[data-whatsapp-quote]");
 const floatingActions = document.querySelectorAll(".floating-whatsapp, .floating-quote");
+const fareSection = document.querySelector("#tarifa");
+let isFareSectionVisible = false;
 
 function buildWhatsappUrl(message = driverData.baseMessage) {
   return `https://wa.me/${driverData.phone}?text=${encodeURIComponent(message)}`;
@@ -25,8 +27,9 @@ function setWhatsappLinks(links, message) {
 
 function updateHeaderState() {
   header.classList.toggle("is-scrolled", window.scrollY > 12);
+  const hideFloatingActions = isFareSectionVisible && window.matchMedia("(max-width: 620px)").matches;
   floatingActions.forEach((action) => {
-    action.classList.toggle("is-visible", window.scrollY > 360);
+    action.classList.toggle("is-visible", window.scrollY > 360 && !hideFloatingActions);
   });
 }
 
@@ -49,6 +52,19 @@ nav.addEventListener("click", (event) => {
 });
 
 window.addEventListener("scroll", updateHeaderState, { passive: true });
+window.addEventListener("resize", updateHeaderState);
+
+if (fareSection && "IntersectionObserver" in window) {
+  const fareObserver = new IntersectionObserver(
+    ([entry]) => {
+      isFareSectionVisible = entry.isIntersecting;
+      document.body.classList.toggle("fare-in-view", isFareSectionVisible);
+      updateHeaderState();
+    },
+    { threshold: 0.08 }
+  );
+  fareObserver.observe(fareSection);
+}
 
 setWhatsappLinks(whatsappLinks, driverData.baseMessage);
 setWhatsappLinks(whatsappQuoteLinks, driverData.quoteMessage);
